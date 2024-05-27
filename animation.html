@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+
+<style>
+
+.man{
+    background-color: black;
+    border: 2px solid red;
+    border-radius: 5px;
+    margin: 200px 100px;
+    height: 100px;
+    width: 100px;
+    animation-name: parth;
+    animation-duration: 2s;
+    animation-iteration-count: 3;
+    
+
+}
+
+
+.hello{
+    background-color: aqua;
+    animation-name: parth1;
+    margin: 200px;
+    height: 200px;
+    width: 200px;
+    border-radius: 5px;
+    animation-name: parth2;
+    animation-duration: 6s;
+    position: relative;
+}
+
+@keyframes parth1{
+    0%{
+        top: 300px;
+        right: 350px;
+
+    }
+    50%{
+        top: 600px;
+        right: 350px;
+
+    }
+    75%{
+        top: 700px;
+        right: 350px;
+
+    }
+    
+}
+
+@keyframes parth{
+
+    0%{
+        background-color: aqua;
+    }
+    25%{
+    background-color: blue;
+    }
+    
+    100%{
+        background-color: green;
+    }
+    from{
+    width: 200px;
+}
+to{
+    width: 500px;
+}
+}
+
+.man1{
+    color: white;
+}
+
+
+</style>
+
+<body>
+
+    <div class="man">
+
+<div class="man1" id="hero">This is me 1</div>
+
+<div class="man1" id="hero">This is me 2</div>
+
+<div class="man1" id="hero">This is me 3</div>
+
+<div class="man1" id="hero">This is me 4</div>
+
+</div>
+
+<div class="hello">
+
+    This is motion
+</div>
+
+    
+</body>
+</html>
